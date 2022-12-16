@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #0088ff;
+  font-family: "Raleway", sans-serif;
+}
+#container {
+  position: relative;
+  width: 80%;
+  margin: 1% auto;
+  background-color: black;
+  box-shadow: -2px -2px 5px white, 2px -2px 5px white;
+}
+#container > nav {
+  width: 100%;
+  display: flex;
+  max-height: 60px;
+}
+#logo {
+  line-height: 60px;
+  font-size: 30px;
+  padding: 0 50px;
+  color: white;
+  width: 20%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px;
+}
+#logo-img {
+  line-height: 60px;
+  font-size: 30px;
+  color: white;
+  width: 30%;
+  height: 100%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px;
+}
+
+#title {
+  float: right;
+  padding: 0;
+  width: 60%;
+}
+#container > nav {
+  position: relative;
+  z-index: 1;
+}
+#container > nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  /*   min-width:60%; */
+}
+#container > nav > ul > li {
+  line-height: 60px;
+  margin: 0 0px;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+  min-width: 120px;
+}
+#container > nav > ul > li > a {
+  position: relative;
+  /*   background-color:red; */
+  margin: 0 20px;
+  color: white;
+}
+#container > nav > ul > li:hover {
+  border-bottom: 2px solid white;
+  background-color: #0088ff;
+}
+#container > nav > ul > li > a:active {
+  background-color: #0088ff !important;
+  text-transform: uppercase;
+}
+#container > nav > ul > .dropdown:hover {
+  border-bottom: none;
+}
+#container > nav > ul > .dropdown:hover > .dd {
+  display: block;
+}
+.dropdown:hover > a .fa-caret-down {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+#container > nav > ul > li > div {
+  position: absolute;
+  padding: 0 10px;
+
+  background-color: black;
+  display: none;
+  background-color: aliceblue;
+  min-width: 100px;
+}
+
+#container > nav > ul > li > div > ul {
+  margin: 0px 0 10px 0;
+  padding: 0;
+  list-style: none;
+}
+#u_a_c {
+  position: relative;
+  width: 100%;
+  /*   background-color:red; */
+}
+#up_arrow {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 42%;
+  top: -10px;
+  background-color: aliceblue;
+  transform: rotate(45deg);
+}
+#container > nav > ul > li > div > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#container > nav > ul > li > div > ul > li > a {
+  padding: 5px;
+  color: black;
+}
+
+#content {
+  background-color: aliceblue;
+}
+.auto-slider {
+  position: relative;
+  box-sizing: content-box;
+  display: inline-block;
+  /* padding: 10px 10px 20px; */
+  margin-left: 15%;
+  margin-right: 15%;
+  /* background: #121; */
+  max-width: 100%;
+  max-height: 50%;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div#slider {
+  overflow: hidden;
+  height: inherit;
+}
+div#slider figure img {
+  width: 20%;
+  float: left;
+  height: 600px;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 45s sliding ease infinite;
+}
+
+/* Slider indicator */
+.indicator {
+  width: 100%;
+  max-width: 100%;
+  height: 6px;
+  background: #2af598;
+  position: absolute;
+  bottom: 0;
+  animation: indicating 9s ease infinite;
+}
+
+@keyframes sliding {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: -100%;
+  }
+  40% {
+    left: -200%;
+  }
+  60% {
+    left: -300%;
+  }
+  80% {
+    left: -400%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes indicating {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+h1 {
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+article {
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: justify;
+}
+#footer {
+  bottom: 0;
+  background-color: hotpink;
+  height: 65px;
+  left: 0;
+  position: relative;
+  font-size: medium;
+  width: 100%;
+  text-align: center;
+}
